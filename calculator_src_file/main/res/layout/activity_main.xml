@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shen.myfirstapp.MainActivity">
+
+    <Button
+        android:id="@+id/Tan"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Tan"
+        app:layout_constraintLeft_toRightOf="@+id/Cos"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/output" />
+
+    <Button
+        android:id="@+id/Center"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="CE"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/Cos" />
+
+    <Button
+        android:id="@+id/Cos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Cos"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/Sin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Sin"
+        app:layout_constraintRight_toLeftOf="@+id/Cos"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/output" />
+
+    <Button
+        android:id="@+id/parenthesL"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="("
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/Center"
+        app:layout_constraintRight_toLeftOf="@+id/Center"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/parenthesR"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text=")"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/Center"
+        app:layout_constraintLeft_toRightOf="@+id/Center"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/point"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button27"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/signE"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/Ans"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/number1"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/number0"
+        app:layout_constraintRight_toLeftOf="@+id/number2"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/number2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/point"
+        app:layout_constraintRight_toLeftOf="@+id/number3"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/signM"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="-"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/signE"
+        app:layout_constraintLeft_toRightOf="@+id/signP"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/number4"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/number1"
+        app:layout_constraintRight_toLeftOf="@+id/number5"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/number5"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="5"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/number2"
+        app:layout_constraintRight_toLeftOf="@+id/number6"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/number7"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/number4"
+        app:layout_constraintRight_toLeftOf="@+id/number8"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/number8"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/number5"
+        app:layout_constraintRight_toLeftOf="@+id/number9"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="AC"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/signD"
+        app:layout_constraintLeft_toRightOf="@+id/delete"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/Ans"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/button27"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/signP"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:elevation="24dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/Ans"
+        app:layout_constraintLeft_toRightOf="@+id/number3" />
+
+    <Button
+        android:id="@+id/signX"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="×"
+        app:layout_constraintBottom_toTopOf="@+id/signP"
+        app:layout_constraintLeft_toRightOf="@+id/number6"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="DEL"
+        app:layout_constraintBottom_toTopOf="@+id/signX"
+        app:layout_constraintLeft_toRightOf="@+id/number9"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/number3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/button27"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/number6"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/number3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/number9"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/number6"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/signD"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="÷"
+        app:layout_constraintBottom_toTopOf="@+id/signM"
+        app:layout_constraintLeft_toRightOf="@+id/signX"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/insert"
+        android:layout_width="430dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="430dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert" />
+
+    <Button
+        android:id="@+id/number0"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/point"
+        android:layout_marginRight="8dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="16dp"
+        android:orientation="horizontal" />
+
+    <ImageButton
+        android:id="@+id/buttonRight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/picture1"
+        app:layout_constraintLeft_toRightOf="@+id/Center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/Cos" />
+
+    <ImageButton
+        android:id="@+id/buttonLeft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/picture2"
+        app:layout_constraintRight_toLeftOf="@+id/Center"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/Cos" />
+
+</android.support.constraint.ConstraintLayout>
